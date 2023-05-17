@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+#checkimg {
+    margin: 8px;
+}
+img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 7px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+}
+
+nav::before {
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0px;
+    opacity: .6;
+    position: absolute;
+    z-index: -1;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 40px;
+}
+nav ul .div{
+display: none;
+}
+#div img{
+    height: 25px;
+    display: none;
+    width: 34px;
+    margin: 0;padding: 0;
+}
+nav ul li{
+    font-size: x-large;
+    margin: 0 5px;
+}
+.a{
+    padding: 0px 5px;
+    color: #fff;
+}
+.a:hover{
+    background-color: #fff;
+    border-radius: 15px;
+    color: black;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 332px;margin: 0 10vw;
+    /* position:relative;
+    /* top: -69px; *//* position type kuch nahi lagega  */
+    /* background-color: beige; */
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    height: 402px;
+    /* height: 664px; */
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: url("./Image/874109.png") no-repeat top center/cover ;
+    z-index: -1;
+    opacity: .73;
+}
+
+button{
+    padding: 5px;
+    background:radial-gradient(rgb(131, 189, 236) 60%, rgb(229, 134, 241) 40%);
+    border: transparent ;
+    border-radius: 7px ;
+    font-weight: bolder;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 0 0 20px aliceblue;
+}
+button a{
+    color: aliceblue;
+}
+#home h1{
+    font-size: 53px;
+}
+#home p{
+    font-size: 27px;
+    text-align: center;
+}
+
+best anime seris
+
+#animeseris {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+#animeseris h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 37px;
+    /* height: 54px; */
+    z-index: -1;
+    align-items: center;
+    position: sticky;
+}
+
+#animeseris #allimage {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+ .images {
+    width: 50%;
+    /* border: .1px solid; */
+}
+
+
+#animeseris .images div {
+    margin:5px;
+    flex-direction: row;
+    /* background-color: antiquewhite; */
+    display: flex;
+    font-size: 1.4rem;
+    align-items: center;
+}
+#animeseris .images div ul  img {
+ margin: 0px 10px 0 0;
+}
+#animeseris .images .img {
+    height: 80px;
+    width: 150px;
+    border-radius: 1%;
+}
+/* footer */
+#footer{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: black;
+    color: #fff;
+}
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 300px;
+    /* background-color: rgb(102, 100, 235); */
+}
+#box h3{
+    padding: 10px;
+    margin: 8px 0;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+    border-bottom: 1px solid white;
+}
+#footer p{
+    color: #fff;
+    margin: 20px;
+}

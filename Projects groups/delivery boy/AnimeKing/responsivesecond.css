@@ -1,0 +1,19 @@
+@media screen and (max-width:734px) {
+    #home{
+        margin: 0 3vw;
+    }
+    #home h1{
+        font-size: 45px;
+    }
+    #animeseris .images div .img {
+        width: 100%;
+        margin: 0 100px;
+        height: 150px;
+    }
+    #animeseris .images div ul li{
+        font-size: 14px;
+    }
+    .font-p{
+        font-size: .5rem;
+    }
+}

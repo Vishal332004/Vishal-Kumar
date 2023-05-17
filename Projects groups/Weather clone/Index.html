@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="root">
+        <header id="header">
+            <nav>
+                <li>
+                    <img src="pink-324175__340.jpg" id="icon" alt="Image error">
+                    <h3>WeatherX</h3>
+                </li>
+                <ul class="display-none">
+                    <a href="#search" class="active">
+                        <li>Home</li>
+                    </a>
+                    <a href="#footer">
+                        <li>About us</li>
+                    </a>
+                    <a href="#weather">
+                        <li>Weather</li>
+                    </a>
+                    <!-- <li>contact us</li> -->
+                    <!-- <button>Login</button>
+                        <button>Singup</button> -->
+                    <!-- <a href="#"><li>Famous city</li></a> -->
+                </ul>
+                <img src="nav icon.png" alt="" id="navIcon">
+            </nav>
+        </header>
+        <section id="search">
+            <div id="line" class="box-shodow-aqua"></div>
+            <div class="heading">
+                <!-- <p>WeatherX</p> -->
+                <p>Search for a Location and we will fetch the Weather for you</p>
+            </div>
+            <input type="search" id="inputsearch" placeholder="Search Place">
+            <div id="searchShow">
+                <button>Search Weather</button>
+                <div class="display-height">
+                    <div id="value-show">
+                        <div>
+                            <p class="temp"><span>12</span><span class="font-size">°C</span></p>
+                            <p>Tempreture</p>
+                        </div>
+                        <div>
+                            <p class="wind"><span>12</span><span class="font-size">km/h</span></p>
+                            <p>Windspeed</p>
+                        </div>
+                        <div>
+                            <p class="templike"><span>12</span><span class="font-size">°C</span></p>
+                            <p class="p1">Tempreture feel like</p>
+                            <p class="p2">Temp feel like</p>
+                        </div>
+                        <div>
+                            <p class="humidity"><span>12</span><span class="font-size">%</span></p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div id="related-img">
+                        <img src="download.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="showcase">
+                <div>
+                    <img src="greater-london-london-163178391057o.webp" alt="">
+                    <h3>London (<span>8</span>°C)</h3>
+                    <p>This Weather is London, Tempreture is <span>8</span> and the windspeed is <span>8.1</span> km/h.
+                    </p>
+                </div>
+                <div>
+                    <img src="Lotus-Temple-New-Delhi - Copy.jpg" alt="">
+                    <h3>Delhi (<span>8</span>°C)</h3>
+                    <p>This Weather is Delhi, Tempreture is <span>8</span> and the windspeed is <span>8.1</span> km/h.
+                    </p>
+                </div>
+                <div>
+                    <img src="download.jpg" alt="">
+                    <h3>US (<span>8</span>°C)</h3>
+                    <p>This Weather is UK, Tempreture is <span>8</span> and the windspeed is <span>8.1</span> km/h.</p>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <div id="footer-text">
+                <div class="AboutWeb">
+                    <h3>About us</h3>
+                    <p>This website are using rapid api for fetching datas.</p>
+                    <p>And now owner of this website is Vishal!</p>
+                    <p>If you want use rapid Api. thes click here <a href="https://rapidapi.com/">Rapid Api</a>.</p>
+                </div>
+                <div class="contactWeb">
+                    <h3>Contact us</h3>
+                    <p>I am Vishal and I'm frontend web developer now.</p>
+                    <p>This my website click here and contact me <a href="#">WWW.Vishal2004.com</a>.</p>
+                </div>
+                <div><p>Copyright &copy; 2023 by Vishal Kumar | All Right Reserved.</p></div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

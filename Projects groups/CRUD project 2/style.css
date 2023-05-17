@@ -1,0 +1,85 @@
+*{
+    margin: 0;padding: 0;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    border: transparent;
+}
+html body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+html{
+    font-size: clamp(30%,1vw,62.5%);
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+#form{
+    width: 55rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+    /* box-shadow: 0px 0 50rem rgb(100, 146, 236); */
+}
+#form::after{
+    content: "";
+    background-color: rgb(141, 169, 233);
+    position: absolute;
+    top: 5rem;
+    height: calc(65.7rem - 8rem);
+    bottom: 3rem;
+    width: 55rem;
+    border-radius: 50%;
+    box-shadow: 0 0 50rem rgb(100, 146, 236);
+    z-index: -1;
+
+}
+#form::before{
+    content: "";
+    background-color: rgb(141, 169, 233);
+    position: absolute;
+    top: 5rem;
+    height: calc(65.7rem - 8rem);
+    bottom: 3rem;
+    width: 55rem;
+    border-radius: 50%;
+    box-shadow: 0 0 50rem rgb(100, 146, 236);
+    z-index: -1;
+
+}
+span{
+    color:white ;
+}
+#form h1{
+    text-align: center;
+    color: aliceblue;
+    font-size: 5.7rem;
+}
+#form span{
+    font-size: 1.7rem;
+}
+#form input{
+    height: 2.5rem;
+    width: 30rem;
+    background-color: aliceblue;
+    border: transparent;
+    font-size: 1.45rem;
+    padding-left: .5rem;
+}
+
+button{
+    padding: .5rem;
+    font-size: 1.6rem;
+}
+
+select{
+    width: 40rem;
+    padding: .5rem;
+}
+option{
+    padding: .5rem;
+    height: 10rem;
+}

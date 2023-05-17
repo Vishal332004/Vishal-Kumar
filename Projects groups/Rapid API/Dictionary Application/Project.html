@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        nav{
+            background-color: greenyellow;
+            width: 100vw;
+            padding: 20px;
+        }
+        .div{
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: column;
+        }
+        .div div:nth-child(1){
+            margin-top: 80px;
+            margin-bottom: 30px;
+        }
+        .div div:nth-child(1) h1{
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+        .text{
+            display: flex;
+            justify-content: center;
+        }
+        .Data{
+            display:flex ;
+            flex-direction: column;
+            align-items: center;
+        }
+        input:nth-child(1){
+            height: 40px;
+            width: 350px;
+            border: 1px solid rgb(243, 237, 237);
+        }
+        input:nth-child(2){
+            width: 80px;
+        }
+        .suggetion{
+            background-color: rgb(188, 90, 245);
+            color: aliceblue;
+            padding: 3px ;
+            border-radius: 2px;
+            margin: 3px;
+        }
+        .not-found{
+            width: 60vw;
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            /* align-items: center; */
+        }
+        h3{
+            text-align: center;
+            width: 100%;
+        }
+        .Defination{
+            text-align: center;
+            font-size: 23px;
+            width: 667px;
+        }
+        .audio{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav>Dictionary</nav>
+    <div class="div">
+        <div>
+            <h1>Find any word exist in the world :)</h1>
+            <div class="text">
+                <input type="text" placeholder="Search..." id="input">
+                <input type="button" value="Search" id="Search">
+            </div>
+        </div>
+        <div class="Data container">
+            <p class="Defination"></p>
+            <div class="not-found"></div>
+            <span class="Span"></span>
+            <div class="audio"></div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

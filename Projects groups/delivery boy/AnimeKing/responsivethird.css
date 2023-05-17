@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    /* yesa karane se 1rem=10px ho jata hai */
+}
+a,a:hover{
+    text-decoration: none;
+}
+.searchBox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchText{
+    width: 25rem;
+    padding: 1.5rem;
+    border-radius: 5rem;
+    border: none;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-right: .5rem;
+    outline: none;
+    /* padding: 1.5rem; */
+    transition: all .2s linear;
+}
+.searchbtn{
+    width: 4rem;
+    height: 4rem;
+    margin-right:.5rem ;
+    background-color: #192a56;
+    color: white;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    right: 1rem;
+    border-radius: 4rem;
+}
+
+@media screen and (max-width:440px) {
+    #home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 202px;margin: 0 2vw;
+        /* position:relative;
+        /* top: -69px; *//* position type kuch nahi lagega  */
+        /* background-color: beige; */
+    }
+    #home::before {
+        content: "";
+        position: absolute;
+        height: 250px;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background: url("./Image/874109.png") no-repeat top center/cover ;
+        z-index: -1;
+        opacity: .73;
+    }
+    img{
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        margin: 7px;
+        cursor: pointer;
+    }
+    #animeseris h1{
+        font-size: 23px;
+        margin-top:10px ;
+    }
+    #animeseris #allimage {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    #animeseris .images {
+        width: 100%;
+        /* border: .1px solid; */
+    }
+    .margin-right{
+        position: absolute;
+        right: 7px;
+        font-size: 11px;
+        padding: 2px 0;margin:  0;width: 140px;
+    }
+    #home h1 {
+        font-size: 23px;
+    }
+    #home p{
+        font-size: 13px;
+    }
+    /* searchbars */
+    .searchBox{
+        position: absolute;
+        display: flex;
+        /* width: 100%; */
+        right: 0px;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .searchText{
+        width: 0;
+        height: 0;
+        border-radius: 0rem;
+        border: none;
+        left: 0;
+        outline: none;
+        /* padding: 1.5rem; */
+        transition: all .2s linear;
+        margin-right: 0;
+        padding: 0;
+    }
+    .searchbtn{
+        width: 4rem;
+        height: 4rem;
+        background-color: #192a56;
+        color: white;
+        position: absolute;
+        display: grid;
+        place-items: center;
+        right: 1rem;
+        border-radius: 4rem;
+    }
+    .searchBox:hover>.searchText{
+        width: 100vw;
+        height: 100%;
+        padding: 1.5rem;
+    }
+}

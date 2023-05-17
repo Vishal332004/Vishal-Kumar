@@ -1,0 +1,149 @@
+*{margin: 0;padding: 0;}
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+html{
+    font-size: clamp(30%,1vw,62.5%);
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+/* Start Style of Details */
+#curdetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellow; */
+    
+}
+
+#curdetails::before{
+    content: "";
+    background-color: rgb(100, 146, 236);
+    position: absolute;
+    top: 5rem;;
+    height: calc(65.7rem - 8rem);
+    bottom: 3rem;
+    width: 55rem;
+    border-radius: 50%;
+    box-shadow: 0 0 50rem rgb(100, 146, 236);
+    z-index: -1;
+
+}
+#curdetails::after{
+    content: "";
+    background-color: rgb(141, 169, 233);
+    position: absolute;
+    top: 5rem;
+    height: calc(65.7rem - 8rem);
+    bottom: 3rem;
+    width: 55rem;
+    border-radius: 50%;
+    box-shadow: 0 0 50rem rgb(100, 146, 236);
+    z-index: -1;
+
+}
+/* Style here heading */
+#curdetails h1{
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 4rem 4rem 4rem black;
+    margin: 1.5rem 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5.7rem;
+}
+/* Making and Style Box in Details Showing */
+#Details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+}
+
+/* Start Here Making Titles And style */
+#Details .TitleIndex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.TitleIndex div{
+    border: .3rem solid;
+    width: 15.9rem;
+    height: 3rem;
+    padding-left: .5rem;
+    font-size: 2.3rem;
+    color: aliceblue;
+    text-align: center;
+}
+.TitleIndex div:nth-child(1){
+    width: 6rem;
+}
+.TitleIndex div:nth-child(3){
+    width: 9rem;
+}
+.TitleIndex div:nth-child(4){
+    width: 9rem;
+}
+.TitleIndex div:nth-child(6){
+    width: 17rem;
+}
+.TitleIndex div:nth-child(7){
+    width: 18.6rem;
+}
+
+
+/* Start  here Showing Details and value showing  */
+.DetailsIndex{
+    display: flex;
+}
+.DetailsIndex div{
+    border: 3px solid;
+    width: 159px;
+    height: 3rem;
+    padding-left: .5rem;
+    font-size: 17px;
+    margin-top: 4px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.DetailsIndex div:nth-child(1){
+    padding-left: 0;
+    width: 6.5rem;
+}
+.DetailsIndex div:nth-child(3){
+    padding-left: 0;
+    width: 9.5rem;
+}
+.DetailsIndex div:nth-child(4){
+    padding-left: 0;
+    width: 9.5rem;
+}
+.DetailsIndex div:nth-child(6){
+    padding-left: 0;
+    width: 17.5rem;
+}
+.DetailsIndex div:nth-child(7){
+    padding-left: 0;
+    width: 191px;
+}
+.DetailsIndex div:nth-child(7) button:nth-child(1){
+    padding: .5rem 8px;
+    background-color: red;
+    border-radius: 8px;
+    border: transparent;
+    letter-spacing: 2px;
+}
+.DetailsIndex div:nth-child(7) button:nth-child(2){
+    padding: .5rem 8px;
+    background-color: yellow;
+    border-radius: 8px;
+    border: transparent;
+    letter-spacing: 2px;
+}
